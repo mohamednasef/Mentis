@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --bs-custom-primary: #1467ff;
+  --bs-custom-light: #f4f4f4;
+  --bs-table-light: #F9FAFB;
+  --bs-gray-50: #757575;
+  --bs-custom-gray: #A1A5B7;
+  --bs-stroke: #98A2B3 ;
+}
+
+.bg-custom-primary {
+  background-color: var(--bs-custom-primary);
+  color: var(--bs-white);
+}
+
+.text-custom-primary {
+  color: var(--bs-custom-primary);
+}
+
+.bg-custom-info {
+  background-color: var(--bs-custom-info);
+  color: var(--bs-white);
+}
+
+.text-custom-info {
+  color: var(--bs-custom-info);
+}
+
+.bg-custom-light-primary {
+  background-color: var(--bs-custom-light-primary) !important;
+}
+
+.bg-custom-light-green {
+  background-color: var(--bs-custom-light-green) !important;
+}
+
+.bg-custom-orange {
+  background-color: var(--bs-custom-orange);
+  color: var(--bs-white);
+}
+
+.text-custom-orange {
+  color: var(--bs-custom-orange);
+}
+
+.bg-custom-orange:hover {
+  background-color: var(--bs-custom-orange);
+  color: var(--bs-white);
+}
+
+.text-gray-50 {
+  color: var(--bs-gray-50);
+}
+
+.text-custom-gray {
+  color: var(--bs-custom-gray);
+}
+
+.bg-custom-light {
+  background-color: var(--bs-custom-light);
+}
+
+.bg-custom-table-light {
+  background-color: var(--bs-table-light);
+}
+
+.text-stroke {
+  color: var(--bs-stroke);
+}
+
+/* ---------- Custom font ---------- */
+/* ---------- Custom variables font ---------- */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  display: inline-flex;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Dashboard:before {
+  content: "\e908";
+}
+
+.icon-Setting:before {
+  content: "\e909";
+}
+
+.icon-down:before {
+  content: "\e907";
+}
+
+.icon-file:before {
+  content: "\e902";
+}
+
+.icon-good:before {
+  content: "\e906";
+}
+
+.icon-info-circle:before {
+  content: "\e90a";
+}
+
+.icon-right-left:before {
+  content: "\e905";
+}
+
+/*========================================
+/* general style
+========================================*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-transform: capitalize;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.form-control::-moz-placeholder {
+  color: var(--bs-custom-gray);
+  opacity: 1;
+  font-size: 14px;
+}
+
+.form-control::placeholder {
+  color: var(--bs-custom-gray);
+  opacity: 1;
+  font-size: 14px;
+}
+
+.vertical-line {
+  display: inline-block;
+  align-self: stretch;
+  width: 2px;
+  min-height: 1em;
+  background-color: currentcolor;
+  opacity: 1;
+  color: #EAECF0;
+}
+
+/*========================================
+/* Login Page
+========================================*/
+.login-page .left-page {
+  background-color: rgba(0, 84, 235, 0.04);
+  position: relative;
+}
+.login-page .left-page::after {
+  content: "";
+  width: 300px;
+  height: 200px;
+  display: block;
+  background-image: url("/assets/media/logos/Login.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+.login-page .show-password {
+  right: 5px;
+  top: 40px;
+}
+
+/*========================================
+/* layout & Sidebar
+========================================*/
+#kt_app_header_container {
+  border-bottom: 1px solid #EAEAEA;
+}
+
+#kt_app_sidebar_logo {
+  margin: -1px 0;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.app-sidebar-logo-default {
+  height: 60px;
+  width: 210px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.app-sidebar-logo {
+  justify-content: center !important;
+}
+
+.app-login-logo-default {
+  height: 200px;
+  width: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.user-img {
+  border: 2px solid #F1F5F7;
+  border-radius: 50% !important;
+  padding: 2px;
+}
+
+.app-sidebar {
+  background-color: #F9FAFB !important;
+}
+.app-sidebar .app-sidebar-toggle {
+  border: none !important;
+  background-color: transparent !important;
+}
+.app-sidebar .app-sidebar-toggle .ki-black-left-line {
+  left: 25px;
+  color: rgb(165, 165, 165);
+}
+
+.table-title .text {
+  border-right: 2px solid #EAECF0;
+}
+
+.menu-title {
+  color: #666666 !important;
+}
+
+/*========================================
+/* ChartV1
+========================================*/
+.ChartV1,
+.barChart {
+  background-color: rgb(249, 250, 251);
+}
+
+.ChartV2 {
+  background-color: rgba(254, 58, 70, 0.08);
+}/*# sourceMappingURL=custom-style.css.map */
