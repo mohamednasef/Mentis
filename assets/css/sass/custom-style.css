@@ -5,7 +5,9 @@
   --bs-table-light: #F9FAFB;
   --bs-gray-50: #757575;
   --bs-custom-gray: #A1A5B7;
-  --bs-stroke: #98A2B3 ;
+  --bs-stroke: #98A2B3
+
+;
 }
 
 .bg-custom-primary {
@@ -57,7 +59,11 @@
 }
 
 .bg-custom-light {
-  background-color: var(--bs-custom-light);
+  background-color: #fafafa;
+}
+
+.back-w {
+  background-color: #fff;
 }
 
 .bg-custom-table-light {
@@ -71,16 +77,17 @@
 /* ---------- Custom font ---------- */
 /* ---------- Custom variables font ---------- */
 @font-face {
-  font-family: "icomoon";
+  font-family: 'icomoon';
   src: url("../fonts/icomoon.eot");
   src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-[class^=icon-],
+
+[class^="icon-"],
 [class*=" icon-"] {
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -88,6 +95,8 @@
   text-transform: none;
   line-height: 1;
   position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   direction: ltr;
   -webkit-font-smoothing: antialiased;
@@ -134,7 +143,19 @@ html {
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
-.form-control::-moz-placeholder {
+.form-control::-webkit-input-placeholder {
+  color: var(--bs-custom-gray);
+  opacity: 1;
+  font-size: 14px;
+}
+
+.form-control:-ms-input-placeholder {
+  color: var(--bs-custom-gray);
+  opacity: 1;
+  font-size: 14px;
+}
+
+.form-control::-ms-input-placeholder {
   color: var(--bs-custom-gray);
   opacity: 1;
   font-size: 14px;
@@ -148,7 +169,9 @@ html {
 
 .vertical-line {
   display: inline-block;
-  align-self: stretch;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
   width: 2px;
   min-height: 1em;
   background-color: currentcolor;
@@ -159,22 +182,28 @@ html {
 /*========================================
 /* Login Page
 ========================================*/
+.form-control {
+  font-weight: 400;
+}
+
 .login-page .left-page {
   background-color: rgba(0, 84, 235, 0.04);
   position: relative;
 }
+
 .login-page .left-page::after {
   content: "";
   width: 300px;
   height: 200px;
   display: block;
-  background-image: url("/assets/media/logos/Login.png");
+  background-image: url("../../../assets/media/logos/Login.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   left: 0;
   top: -5px;
 }
+
 .login-page .show-password {
   right: 5px;
   top: 40px;
@@ -200,7 +229,9 @@ html {
 }
 
 .app-sidebar-logo {
-  justify-content: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
 }
 
 .app-login-logo-default {
@@ -219,13 +250,15 @@ html {
 .app-sidebar {
   background-color: #F9FAFB !important;
 }
+
 .app-sidebar .app-sidebar-toggle {
   border: none !important;
   background-color: transparent !important;
 }
+
 .app-sidebar .app-sidebar-toggle .ki-black-left-line {
   left: 25px;
-  color: rgb(165, 165, 165);
+  color: #a5a5a5;
 }
 
 .table-title .text {
@@ -241,9 +274,10 @@ html {
 ========================================*/
 .ChartV1,
 .barChart {
-  background-color: rgb(249, 250, 251);
+  background-color: #f9fafb;
 }
 
 .ChartV2 {
   background-color: rgba(254, 58, 70, 0.08);
-}/*# sourceMappingURL=custom-style.css.map */
+}
+/*# sourceMappingURL=custom-style.css.map */

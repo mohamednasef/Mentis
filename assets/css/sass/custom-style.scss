@@ -53,9 +53,12 @@
 }
 
 .bg-custom-light{
-  background-color: var(--bs-custom-light);
+//   background-color: var(--bs-custom-light);
+  background-color: #fafafa;
 }
-
+.back-w{
+    background-color: #fff;
+}
 .bg-custom-table-light{
     background-color: var(--bs-table-light);
   }
@@ -147,6 +150,9 @@ html {
 /*========================================
 /* Login Page
 ========================================*/
+.form-control{
+    font-weight: 400;
+}
 .login-page{
     .left-page{
         background-color: rgba(0, 84, 235, 0.04);
@@ -156,7 +162,7 @@ html {
             width: 300px;
             height: 200px;
             display: block;
-            background-image: url("/assets/media/logos/Login.png");
+            background-image: url("../../../assets/media/logos/Login.png");
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
